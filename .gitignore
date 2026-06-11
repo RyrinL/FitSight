@@ -11,3 +11,14 @@ xcuserdata/
 
 # macOS
 .DS_Store
+
+# Local agent/tooling config
+.claude/
+.mcp.json
+
+# Python
+__pycache__/
+*.py[cod]
+
+# API secrets — never commit
+Fitness/Secrets.swift

@@ -7,19 +7,155 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3697B172FD0447000F5D77F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3697B162FD0447000F5D77F /* GoogleService-Info.plist */; };
 		D38051A12FAC23F200CA7FFB /* FitnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38051A02FAC23F200CA7FFB /* FitnessApp.swift */; };
 		D38051A32FAC23F200CA7FFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38051A22FAC23F200CA7FFB /* ContentView.swift */; };
 		D38051A52FAC23F500CA7FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38051A42FAC23F500CA7FFB /* Assets.xcassets */; };
 		D38051A82FAC23F500CA7FFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38051A72FAC23F500CA7FFB /* Preview Assets.xcassets */; };
+		FF000100000000000000FFFF /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000100000000000000FFFF /* UserProfile.swift */; };
+		FF000200000000000000FFFF /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000200000000000000FFFF /* WorkoutSession.swift */; };
+		FF000300000000000000FFFF /* NutritionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000300000000000000FFFF /* NutritionEntry.swift */; };
+		FF000400000000000000FFFF /* StreakRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000400000000000000FFFF /* StreakRecord.swift */; };
+		FF000500000000000000FFFF /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000500000000000000FFFF /* ChatMessage.swift */; };
+		FF000600000000000000FFFF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000600000000000000FFFF /* AuthService.swift */; };
+		FF000700000000000000FFFF /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000700000000000000FFFF /* DatabaseService.swift */; };
+		FF000800000000000000FFFF /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000800000000000000FFFF /* HealthKitService.swift */; };
+		FF000900000000000000FFFF /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE000900000000000000FFFF /* NotificationService.swift */; };
+		FF001000000000000000FFFF /* AICoachService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001000000000000000FFFF /* AICoachService.swift */; };
+		FF005B00000000000000FFFF /* VoiceCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005B00000000000000FFFF /* VoiceCoach.swift */; };
+		FF001100000000000000FFFF /* CameraFormCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001100000000000000FFFF /* CameraFormCoach.swift */; };
+		FF001200000000000000FFFF /* FormAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001200000000000000FFFF /* FormAnalyzer.swift */; };
+		FF001300000000000000FFFF /* RecommendationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001300000000000000FFFF /* RecommendationEngine.swift */; };
+		FF001400000000000000FFFF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001400000000000000FFFF /* AppViewModel.swift */; };
+		FF001500000000000000FFFF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001500000000000000FFFF /* DashboardViewModel.swift */; };
+		FF001600000000000000FFFF /* NutritionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001600000000000000FFFF /* NutritionViewModel.swift */; };
+		FF001700000000000000FFFF /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001700000000000000FFFF /* ChatViewModel.swift */; };
+		FF001800000000000000FFFF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001800000000000000FFFF /* LoginView.swift */; };
+		FF001900000000000000FFFF /* ProfileSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE001900000000000000FFFF /* ProfileSetupView.swift */; };
+		FF002000000000000000FFFF /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002000000000000000FFFF /* TodayView.swift */; };
+		FF002100000000000000FFFF /* ProgressDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002100000000000000FFFF /* ProgressDashboardView.swift */; };
+		FF002200000000000000FFFF /* CoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002200000000000000FFFF /* CoachView.swift */; };
+		FF002300000000000000FFFF /* FormCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002300000000000000FFFF /* FormCoachView.swift */; };
+		FF002400000000000000FFFF /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002400000000000000FFFF /* NutritionView.swift */; };
+		FF002500000000000000FFFF /* ChatCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002500000000000000FFFF /* ChatCoachView.swift */; };
+		FF002600000000000000FFFF /* MetricTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002600000000000000FFFF /* MetricTile.swift */; };
+		FF002700000000000000FFFF /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002700000000000000FFFF /* WorkoutCard.swift */; };
+		FF002800000000000000FFFF /* FeatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002800000000000000FFFF /* FeatureRow.swift */; };
+		FF002900000000000000FFFF /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE002900000000000000FFFF /* CircularProgress.swift */; };
+		FF003000000000000000FFFF /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003000000000000000FFFF /* DesignSystem.swift */; };
+		FF003100000000000000FFFF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003100000000000000FFFF /* OnboardingView.swift */; };
+		FF003200000000000000FFFF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003200000000000000FFFF /* SettingsView.swift */; };
+		FF003300000000000000FFFF /* CalorieProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003300000000000000FFFF /* CalorieProgressRing.swift */; };
+		FF003400000000000000FFFF /* AchievementBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003400000000000000FFFF /* AchievementBadge.swift */; };
+		FF003500000000000000FFFF /* PoseFeedbackOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003500000000000000FFFF /* PoseFeedbackOverlay.swift */; };
+		FF003600000000000000FFFF /* NutritionSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003600000000000000FFFF /* NutritionSummaryCard.swift */; };
+		FF003700000000000000FFFF /* HealthSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003700000000000000FFFF /* HealthSnapshot.swift */; };
+		FF003800000000000000FFFF /* CalorieGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003800000000000000FFFF /* CalorieGoalView.swift */; };
+		FF003900000000000000FFFF /* WorkoutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003900000000000000FFFF /* WorkoutPlan.swift */; };
+		FF003A00000000000000FFFF /* ExerciseLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003A00000000000000FFFF /* ExerciseLibrary.swift */; };
+		FF003B00000000000000FFFF /* WeeklyPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003B00000000000000FFFF /* WeeklyPlanView.swift */; };
+		FF003C00000000000000FFFF /* SkeletonOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003C00000000000000FFFF /* SkeletonOverlayView.swift */; };
+		FF003D00000000000000FFFF /* FoodDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003D00000000000000FFFF /* FoodDatabase.swift */; };
+		FF003E00000000000000FFFF /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003E00000000000000FFFF /* BarcodeScannerView.swift */; };
+		FF003F00000000000000FFFF /* AchievementEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE003F00000000000000FFFF /* AchievementEngine.swift */; };
+		FF004000000000000000FFFF /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004000000000000000FFFF /* FirebaseAuthService.swift */; };
+		FF004100000000000000FFFF /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004100000000000000FFFF /* FirestoreService.swift */; };
+		FF004200000000000000FFFF /* CrashlyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004200000000000000FFFF /* CrashlyticsService.swift */; };
+		FF004300000000000000FFFF /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004300000000000000FFFF /* AnalyticsService.swift */; };
+		FF004400000000000000FFFF /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004400000000000000FFFF /* CameraManager.swift */; };
+		FF004500000000000000FFFF /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004500000000000000FFFF /* CameraPreviewView.swift */; };
+		FF004600000000000000FFFF /* FrameProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004600000000000000FFFF /* FrameProcessor.swift */; };
+		FF004700000000000000FFFF /* JointAngleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004700000000000000FFFF /* JointAngleCalculator.swift */; };
+		FF004800000000000000FFFF /* PoseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004800000000000000FFFF /* PoseDetector.swift */; };
+		FF004900000000000000FFFF /* PoseObservationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE004900000000000000FFFF /* PoseObservationMapper.swift */; };
+		FF005000000000000000FFFF /* ExerciseFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005000000000000000FFFF /* ExerciseFeedback.swift */; };
+		FF005100000000000000FFFF /* RuleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005100000000000000FFFF /* RuleEngine.swift */; };
+		FF005200000000000000FFFF /* SquatFormAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005200000000000000FFFF /* SquatFormAnalyzer.swift */; };
+		FF005300000000000000FFFF /* SquatCoachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005300000000000000FFFF /* SquatCoachViewModel.swift */; };
+		FF005400000000000000FFFF /* FeedbackCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005400000000000000FFFF /* FeedbackCard.swift */; };
+		FF005500000000000000FFFF /* SquatSkeletonOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005500000000000000FFFF /* SquatSkeletonOverlayView.swift */; };
+		FF005600000000000000FFFF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005600000000000000FFFF /* Secrets.swift */; };
+		FF005700000000000000FFFF /* CustomPlanBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005700000000000000FFFF /* CustomPlanBuilderView.swift */; };
+		FF005800000000000000FFFF /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005800000000000000FFFF /* MoreView.swift */; };
+		FF005900000000000000FFFF /* MoveNetDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE005900000000000000FFFF /* MoveNetDetector.swift */; };
+		FF005A00000000000000FFFF /* movenet_lightning.tflite in Resources */ = {isa = PBXBuildFile; fileRef = EE005A00000000000000FFFF /* movenet_lightning.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D380519D2FAC23F200CA7FFB /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3697B162FD0447000F5D77F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fitness/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D380519D2FAC23F200CA7FFB /* FitSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38051A02FAC23F200CA7FFB /* FitnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessApp.swift; sourceTree = "<group>"; };
 		D38051A22FAC23F200CA7FFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D38051A42FAC23F500CA7FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D38051A72FAC23F500CA7FFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D38051B02FAC244900CA7FFB /* FitSight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitSight.entitlements; sourceTree = "<group>"; };
+		EE000100000000000000FFFF /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		EE000200000000000000FFFF /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		EE000300000000000000FFFF /* NutritionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionEntry.swift; sourceTree = "<group>"; };
+		EE000400000000000000FFFF /* StreakRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakRecord.swift; sourceTree = "<group>"; };
+		EE000500000000000000FFFF /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		EE000600000000000000FFFF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EE000700000000000000FFFF /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		EE000800000000000000FFFF /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		EE000900000000000000FFFF /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EE001000000000000000FFFF /* AICoachService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICoachService.swift; sourceTree = "<group>"; };
+		EE005B00000000000000FFFF /* VoiceCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCoach.swift; sourceTree = "<group>"; };
+		EE001100000000000000FFFF /* CameraFormCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFormCoach.swift; sourceTree = "<group>"; };
+		EE001200000000000000FFFF /* FormAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormAnalyzer.swift; sourceTree = "<group>"; };
+		EE001300000000000000FFFF /* RecommendationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngine.swift; sourceTree = "<group>"; };
+		EE001400000000000000FFFF /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		EE001500000000000000FFFF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		EE001600000000000000FFFF /* NutritionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewModel.swift; sourceTree = "<group>"; };
+		EE001700000000000000FFFF /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		EE001800000000000000FFFF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EE001900000000000000FFFF /* ProfileSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupView.swift; sourceTree = "<group>"; };
+		EE002000000000000000FFFF /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		EE002100000000000000FFFF /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
+		EE002200000000000000FFFF /* CoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachView.swift; sourceTree = "<group>"; };
+		EE002300000000000000FFFF /* FormCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCoachView.swift; sourceTree = "<group>"; };
+		EE002400000000000000FFFF /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
+		EE002500000000000000FFFF /* ChatCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoachView.swift; sourceTree = "<group>"; };
+		EE002600000000000000FFFF /* MetricTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTile.swift; sourceTree = "<group>"; };
+		EE002700000000000000FFFF /* WorkoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
+		EE002800000000000000FFFF /* FeatureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureRow.swift; sourceTree = "<group>"; };
+		EE002900000000000000FFFF /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		EE003000000000000000FFFF /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		EE003100000000000000FFFF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EE003200000000000000FFFF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE003300000000000000FFFF /* CalorieProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieProgressRing.swift; sourceTree = "<group>"; };
+		EE003400000000000000FFFF /* AchievementBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementBadge.swift; sourceTree = "<group>"; };
+		EE003500000000000000FFFF /* PoseFeedbackOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseFeedbackOverlay.swift; sourceTree = "<group>"; };
+		EE003600000000000000FFFF /* NutritionSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionSummaryCard.swift; sourceTree = "<group>"; };
+		EE003700000000000000FFFF /* HealthSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSnapshot.swift; sourceTree = "<group>"; };
+		EE003800000000000000FFFF /* CalorieGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieGoalView.swift; sourceTree = "<group>"; };
+		EE003900000000000000FFFF /* WorkoutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlan.swift; sourceTree = "<group>"; };
+		EE003A00000000000000FFFF /* ExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibrary.swift; sourceTree = "<group>"; };
+		EE003B00000000000000FFFF /* WeeklyPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPlanView.swift; sourceTree = "<group>"; };
+		EE003C00000000000000FFFF /* SkeletonOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonOverlayView.swift; sourceTree = "<group>"; };
+		EE003D00000000000000FFFF /* FoodDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabase.swift; sourceTree = "<group>"; };
+		EE003E00000000000000FFFF /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		EE003F00000000000000FFFF /* AchievementEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEngine.swift; sourceTree = "<group>"; };
+		EE004000000000000000FFFF /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		EE004100000000000000FFFF /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		EE004200000000000000FFFF /* CrashlyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsService.swift; sourceTree = "<group>"; };
+		EE004300000000000000FFFF /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		EE004400000000000000FFFF /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		EE004500000000000000FFFF /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		EE004600000000000000FFFF /* FrameProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameProcessor.swift; sourceTree = "<group>"; };
+		EE004700000000000000FFFF /* JointAngleCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointAngleCalculator.swift; sourceTree = "<group>"; };
+		EE004800000000000000FFFF /* PoseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetector.swift; sourceTree = "<group>"; };
+		EE004900000000000000FFFF /* PoseObservationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseObservationMapper.swift; sourceTree = "<group>"; };
+		EE005000000000000000FFFF /* ExerciseFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFeedback.swift; sourceTree = "<group>"; };
+		EE005100000000000000FFFF /* RuleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleEngine.swift; sourceTree = "<group>"; };
+		EE005200000000000000FFFF /* SquatFormAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatFormAnalyzer.swift; sourceTree = "<group>"; };
+		EE005300000000000000FFFF /* SquatCoachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatCoachViewModel.swift; sourceTree = "<group>"; };
+		EE005400000000000000FFFF /* FeedbackCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCard.swift; sourceTree = "<group>"; };
+		EE005500000000000000FFFF /* SquatSkeletonOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatSkeletonOverlayView.swift; sourceTree = "<group>"; };
+		EE005600000000000000FFFF /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		EE005700000000000000FFFF /* CustomPlanBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlanBuilderView.swift; sourceTree = "<group>"; };
+		EE005800000000000000FFFF /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		EE005900000000000000FFFF /* MoveNetDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveNetDetector.swift; sourceTree = "<group>"; };
+		EE005A00000000000000FFFF /* movenet_lightning.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = movenet_lightning.tflite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +169,211 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC000100000000000000FFFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE000100000000000000FFFF /* UserProfile.swift */,
+				EE000200000000000000FFFF /* WorkoutSession.swift */,
+				EE000300000000000000FFFF /* NutritionEntry.swift */,
+				EE000400000000000000FFFF /* StreakRecord.swift */,
+				EE000500000000000000FFFF /* ChatMessage.swift */,
+				EE003700000000000000FFFF /* HealthSnapshot.swift */,
+				EE003900000000000000FFFF /* WorkoutPlan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC000200000000000000FFFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE000600000000000000FFFF /* AuthService.swift */,
+				EE000700000000000000FFFF /* DatabaseService.swift */,
+				EE000800000000000000FFFF /* HealthKitService.swift */,
+				EE000900000000000000FFFF /* NotificationService.swift */,
+				EE001000000000000000FFFF /* AICoachService.swift */,
+				EE005B00000000000000FFFF /* VoiceCoach.swift */,
+				EE001100000000000000FFFF /* CameraFormCoach.swift */,
+				EE001200000000000000FFFF /* FormAnalyzer.swift */,
+				EE001300000000000000FFFF /* RecommendationEngine.swift */,
+				EE003A00000000000000FFFF /* ExerciseLibrary.swift */,
+				EE003D00000000000000FFFF /* FoodDatabase.swift */,
+				EE003F00000000000000FFFF /* AchievementEngine.swift */,
+				EE004000000000000000FFFF /* FirebaseAuthService.swift */,
+				EE004100000000000000FFFF /* FirestoreService.swift */,
+				EE004200000000000000FFFF /* CrashlyticsService.swift */,
+				EE004300000000000000FFFF /* AnalyticsService.swift */,
+				CC005000000000000000FFFF /* Camera */,
+				CC005100000000000000FFFF /* Vision */,
+				CC005200000000000000FFFF /* FormAnalysis */,
+				CC005300000000000000FFFF /* ML */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC000300000000000000FFFF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE001400000000000000FFFF /* AppViewModel.swift */,
+				EE001500000000000000FFFF /* DashboardViewModel.swift */,
+				EE001600000000000000FFFF /* NutritionViewModel.swift */,
+				EE001700000000000000FFFF /* ChatViewModel.swift */,
+				EE005300000000000000FFFF /* SquatCoachViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC000400000000000000FFFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC000500000000000000FFFF /* Auth */,
+				CC000600000000000000FFFF /* Profile */,
+				CC000700000000000000FFFF /* Dashboard */,
+				CC000800000000000000FFFF /* Coach */,
+				CC000900000000000000FFFF /* Nutrition */,
+				CC001000000000000000FFFF /* Chat */,
+				CC001100000000000000FFFF /* Components */,
+				CC001200000000000000FFFF /* Design */,
+				CC001300000000000000FFFF /* Onboarding */,
+				CC001400000000000000FFFF /* Settings */,
+				EE005800000000000000FFFF /* MoreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC000500000000000000FFFF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EE001800000000000000FFFF /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CC000600000000000000FFFF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EE001900000000000000FFFF /* ProfileSetupView.swift */,
+				EE003800000000000000FFFF /* CalorieGoalView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CC000700000000000000FFFF /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EE002000000000000000FFFF /* TodayView.swift */,
+				EE002100000000000000FFFF /* ProgressDashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CC000800000000000000FFFF /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				EE002200000000000000FFFF /* CoachView.swift */,
+				EE002300000000000000FFFF /* FormCoachView.swift */,
+				EE003B00000000000000FFFF /* WeeklyPlanView.swift */,
+				EE005400000000000000FFFF /* FeedbackCard.swift */,
+				EE005500000000000000FFFF /* SquatSkeletonOverlayView.swift */,
+				EE005700000000000000FFFF /* CustomPlanBuilderView.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		CC000900000000000000FFFF /* Nutrition */ = {
+			isa = PBXGroup;
+			children = (
+				EE002400000000000000FFFF /* NutritionView.swift */,
+				EE003E00000000000000FFFF /* BarcodeScannerView.swift */,
+			);
+			path = Nutrition;
+			sourceTree = "<group>";
+		};
+		CC001000000000000000FFFF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EE002500000000000000FFFF /* ChatCoachView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CC001100000000000000FFFF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE002600000000000000FFFF /* MetricTile.swift */,
+				EE002700000000000000FFFF /* WorkoutCard.swift */,
+				EE002800000000000000FFFF /* FeatureRow.swift */,
+				EE002900000000000000FFFF /* CircularProgress.swift */,
+				EE003300000000000000FFFF /* CalorieProgressRing.swift */,
+				EE003400000000000000FFFF /* AchievementBadge.swift */,
+				EE003500000000000000FFFF /* PoseFeedbackOverlay.swift */,
+				EE003600000000000000FFFF /* NutritionSummaryCard.swift */,
+				EE003C00000000000000FFFF /* SkeletonOverlayView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC001200000000000000FFFF /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				EE003000000000000000FFFF /* DesignSystem.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		CC001300000000000000FFFF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EE003100000000000000FFFF /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CC001400000000000000FFFF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE003200000000000000FFFF /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CC005000000000000000FFFF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EE004400000000000000FFFF /* CameraManager.swift */,
+				EE004500000000000000FFFF /* CameraPreviewView.swift */,
+				EE004600000000000000FFFF /* FrameProcessor.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		CC005100000000000000FFFF /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				EE004700000000000000FFFF /* JointAngleCalculator.swift */,
+				EE004800000000000000FFFF /* PoseDetector.swift */,
+				EE004900000000000000FFFF /* PoseObservationMapper.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		CC005200000000000000FFFF /* FormAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				EE005000000000000000FFFF /* ExerciseFeedback.swift */,
+				EE005100000000000000FFFF /* RuleEngine.swift */,
+				EE005200000000000000FFFF /* SquatFormAnalyzer.swift */,
+			);
+			path = FormAnalysis;
+			sourceTree = "<group>";
+		};
+		CC005300000000000000FFFF /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				EE005900000000000000FFFF /* MoveNetDetector.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
 		D38051942FAC23F200CA7FFB = {
 			isa = PBXGroup;
 			children = (
@@ -44,7 +385,7 @@
 		D380519E2FAC23F200CA7FFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D380519D2FAC23F200CA7FFB /* Fitness.app */,
+				D380519D2FAC23F200CA7FFB /* FitSight.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +393,18 @@
 		D380519F2FAC23F200CA7FFB /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				D3697B162FD0447000F5D77F /* GoogleService-Info.plist */,
 				D38051A02FAC23F200CA7FFB /* FitnessApp.swift */,
 				D38051A22FAC23F200CA7FFB /* ContentView.swift */,
+				EE005600000000000000FFFF /* Secrets.swift */,
+				EE005A00000000000000FFFF /* movenet_lightning.tflite */,
 				D38051B02FAC244900CA7FFB /* FitSight.entitlements */,
 				D38051A42FAC23F500CA7FFB /* Assets.xcassets */,
 				D38051A62FAC23F500CA7FFB /* Preview Content */,
+				CC000100000000000000FFFF /* Models */,
+				CC000200000000000000FFFF /* Services */,
+				CC000300000000000000FFFF /* ViewModels */,
+				CC000400000000000000FFFF /* Views */,
 			);
 			path = Fitness;
 			sourceTree = "<group>";
@@ -86,7 +434,7 @@
 			);
 			name = Fitness;
 			productName = Fitness;
-			productReference = D380519D2FAC23F200CA7FFB /* Fitness.app */;
+			productReference = D380519D2FAC23F200CA7FFB /* FitSight.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,6 +461,9 @@
 				Base,
 			);
 			mainGroup = D38051942FAC23F200CA7FFB;
+			packageReferences = (
+				D3697B152FD041A000F5D77F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D380519E2FAC23F200CA7FFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +479,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38051A82FAC23F500CA7FFB /* Preview Assets.xcassets in Resources */,
+				D3697B172FD0447000F5D77F /* GoogleService-Info.plist in Resources */,
 				D38051A52FAC23F500CA7FFB /* Assets.xcassets in Resources */,
+				FF005A00000000000000FFFF /* movenet_lightning.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +494,72 @@
 			files = (
 				D38051A32FAC23F200CA7FFB /* ContentView.swift in Sources */,
 				D38051A12FAC23F200CA7FFB /* FitnessApp.swift in Sources */,
+				FF000100000000000000FFFF /* UserProfile.swift in Sources */,
+				FF000200000000000000FFFF /* WorkoutSession.swift in Sources */,
+				FF000300000000000000FFFF /* NutritionEntry.swift in Sources */,
+				FF000400000000000000FFFF /* StreakRecord.swift in Sources */,
+				FF000500000000000000FFFF /* ChatMessage.swift in Sources */,
+				FF000600000000000000FFFF /* AuthService.swift in Sources */,
+				FF000700000000000000FFFF /* DatabaseService.swift in Sources */,
+				FF000800000000000000FFFF /* HealthKitService.swift in Sources */,
+				FF000900000000000000FFFF /* NotificationService.swift in Sources */,
+				FF001000000000000000FFFF /* AICoachService.swift in Sources */,
+				FF005B00000000000000FFFF /* VoiceCoach.swift in Sources */,
+				FF001100000000000000FFFF /* CameraFormCoach.swift in Sources */,
+				FF001200000000000000FFFF /* FormAnalyzer.swift in Sources */,
+				FF001300000000000000FFFF /* RecommendationEngine.swift in Sources */,
+				FF001400000000000000FFFF /* AppViewModel.swift in Sources */,
+				FF001500000000000000FFFF /* DashboardViewModel.swift in Sources */,
+				FF001600000000000000FFFF /* NutritionViewModel.swift in Sources */,
+				FF001700000000000000FFFF /* ChatViewModel.swift in Sources */,
+				FF001800000000000000FFFF /* LoginView.swift in Sources */,
+				FF001900000000000000FFFF /* ProfileSetupView.swift in Sources */,
+				FF002000000000000000FFFF /* TodayView.swift in Sources */,
+				FF002100000000000000FFFF /* ProgressDashboardView.swift in Sources */,
+				FF002200000000000000FFFF /* CoachView.swift in Sources */,
+				FF002300000000000000FFFF /* FormCoachView.swift in Sources */,
+				FF002400000000000000FFFF /* NutritionView.swift in Sources */,
+				FF002500000000000000FFFF /* ChatCoachView.swift in Sources */,
+				FF002600000000000000FFFF /* MetricTile.swift in Sources */,
+				FF002700000000000000FFFF /* WorkoutCard.swift in Sources */,
+				FF002800000000000000FFFF /* FeatureRow.swift in Sources */,
+				FF002900000000000000FFFF /* CircularProgress.swift in Sources */,
+				FF003000000000000000FFFF /* DesignSystem.swift in Sources */,
+				FF003100000000000000FFFF /* OnboardingView.swift in Sources */,
+				FF003200000000000000FFFF /* SettingsView.swift in Sources */,
+				FF003300000000000000FFFF /* CalorieProgressRing.swift in Sources */,
+				FF003400000000000000FFFF /* AchievementBadge.swift in Sources */,
+				FF003500000000000000FFFF /* PoseFeedbackOverlay.swift in Sources */,
+				FF003600000000000000FFFF /* NutritionSummaryCard.swift in Sources */,
+				FF003700000000000000FFFF /* HealthSnapshot.swift in Sources */,
+				FF003800000000000000FFFF /* CalorieGoalView.swift in Sources */,
+				FF003900000000000000FFFF /* WorkoutPlan.swift in Sources */,
+				FF003A00000000000000FFFF /* ExerciseLibrary.swift in Sources */,
+				FF003B00000000000000FFFF /* WeeklyPlanView.swift in Sources */,
+				FF003C00000000000000FFFF /* SkeletonOverlayView.swift in Sources */,
+				FF003D00000000000000FFFF /* FoodDatabase.swift in Sources */,
+				FF003E00000000000000FFFF /* BarcodeScannerView.swift in Sources */,
+				FF003F00000000000000FFFF /* AchievementEngine.swift in Sources */,
+				FF004000000000000000FFFF /* FirebaseAuthService.swift in Sources */,
+				FF004100000000000000FFFF /* FirestoreService.swift in Sources */,
+				FF004200000000000000FFFF /* CrashlyticsService.swift in Sources */,
+				FF004300000000000000FFFF /* AnalyticsService.swift in Sources */,
+				FF004400000000000000FFFF /* CameraManager.swift in Sources */,
+				FF004500000000000000FFFF /* CameraPreviewView.swift in Sources */,
+				FF004600000000000000FFFF /* FrameProcessor.swift in Sources */,
+				FF004700000000000000FFFF /* JointAngleCalculator.swift in Sources */,
+				FF004800000000000000FFFF /* PoseDetector.swift in Sources */,
+				FF004900000000000000FFFF /* PoseObservationMapper.swift in Sources */,
+				FF005000000000000000FFFF /* ExerciseFeedback.swift in Sources */,
+				FF005100000000000000FFFF /* RuleEngine.swift in Sources */,
+				FF005200000000000000FFFF /* SquatFormAnalyzer.swift in Sources */,
+				FF005300000000000000FFFF /* SquatCoachViewModel.swift in Sources */,
+				FF005400000000000000FFFF /* FeedbackCard.swift in Sources */,
+				FF005500000000000000FFFF /* SquatSkeletonOverlayView.swift in Sources */,
+				FF005600000000000000FFFF /* Secrets.swift in Sources */,
+				FF005700000000000000FFFF /* CustomPlanBuilderView.swift in Sources */,
+				FF005800000000000000FFFF /* MoreView.swift in Sources */,
+				FF005900000000000000FFFF /* MoveNetDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,12 +689,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness/Preview Content\"";
+				DEVELOPMENT_TEAM = ZV72HLVDD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitSight;
 				INFOPLIST_KEY_CFBundleName = FitSight;
 				INFOPLIST_KEY_NSCameraUsageDescription = "FitSight uses the camera to analyze exercise form on device and provide coaching feedback.";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitSight reads active energy from Apple Health to show daily calorie progress and recommend workouts.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitSight reads active energy, steps, heart rate, and water from Apple Health to track your daily goals.";
+				INFOPLIST_KEY_NSUserNotificationUsageDescription = "FitSight sends daily workout reminders and streak alerts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,12 +724,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness/Preview Content\"";
+				DEVELOPMENT_TEAM = ZV72HLVDD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitSight;
 				INFOPLIST_KEY_CFBundleName = FitSight;
 				INFOPLIST_KEY_NSCameraUsageDescription = "FitSight uses the camera to analyze exercise form on device and provide coaching feedback.";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitSight reads active energy from Apple Health to show daily calorie progress and recommend workouts.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitSight reads active energy, steps, heart rate, and water from Apple Health to track your daily goals.";
+				INFOPLIST_KEY_NSUserNotificationUsageDescription = "FitSight sends daily workout reminders and streak alerts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -349,6 +772,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3697B152FD041A000F5D77F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D38051952FAC23F200CA7FFB /* Project object */;
 }
